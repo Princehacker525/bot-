@@ -1,5 +1,5 @@
 
-import. requests
+import requests
 import json
 def login(mail, password):
 
@@ -23,7 +23,7 @@ return s
 
 session = login('Lagjavacrash', 'trewq12345')
 
-r = session.patch('https://aternos.org/', json={''}) print(r.content)
+r = session.patch('https://aternos.org/account/', json={'username'}) print(r.content)
 from selenium import webdriver
 
 from webdriver_manager.chrome import Chrome DriverManager
